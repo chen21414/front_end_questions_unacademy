@@ -1,0 +1,61 @@
+/* how to center a div */
+
+/* method 1 */
+body {
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    background-color: aquamarine;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* method 2 */
+body {
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: aquamarine;
+
+}
+
+/* method  3*/
+body {
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: aquamarine;
+}
+
+
+/* how to make a css box model */
+div {
+    background-color: aquamarine;
+    width: 400px;
+    border: 5px solid black;
+    padding: 20px;
+    margin:20px;
+}
